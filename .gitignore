@@ -1,2 +1,6 @@
 db.sqlite3
 ./touristspotapi
+
+#/core/migrations/
+#/comments/migrations/
+#/attractions/migrations/
