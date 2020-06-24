@@ -10,7 +10,8 @@ class TouristSpot(models.Model):
     approved = models.BooleanField(default=False)
     attractions = models.ManyToManyField(Attraction)
     comments = models.ManyToManyField(Comment)
-    address = models.ForeignKey(Address)
+    address = models.ForeignKey(Address, on_delete=models.CASCADE,\
+                                blank=True, null=True)
 
     def __str__(self):
         return self.name
